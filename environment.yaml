@@ -1,0 +1,11 @@
+name: quick-dna
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - setuptools
+  - pip
+  - pip:
+      - oakvar==2.11.23
