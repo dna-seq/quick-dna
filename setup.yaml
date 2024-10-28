@@ -1,0 +1,21 @@
+modules_dir: ~/oakvar_modules
+logs_dir: ~/oakvar_logs
+modules:
+- dbsnp
+- omim
+- ncbigene
+- gnomad
+- vcfinfo
+- clinvar
+- biogrid
+- just_cardio
+- just_cancer
+- just_coronary
+- just_drugs
+- just_longevitymap
+- just_lipidmetabolism
+- just_thrombophilia
+- just_superhuman
+- just_vo2max
+- longevity2reporter
+- phenotype_ontology

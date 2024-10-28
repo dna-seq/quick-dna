@@ -164,5 +164,3 @@ cython_debug/
 # pixi environments
 .pixi
 *.egg-info
-
-quick-dna/setup.yaml
