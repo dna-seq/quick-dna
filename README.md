@@ -45,9 +45,17 @@ ov setup -f setup.yaml
 
 Installation can take a while and a lot of space as we depend on dbsnp database which is huge.
 
-After installation you can run:
+After installation you can run oakvar: gui with
 
 ```bash
-ov --help
+ov gui --multiuser --port 8000
 ```
 
+By default it runs on port 8000. You can open localhost:8000 in your browser.
+
+Please, check OakVar [documentation](https://rkimoakbioinformatics.github.io/oakvar/overview/) or Just-DNA-Seq [documentation](https://just-dna-seq.readthedocs.io/en/latest/) for more details.
+
+
+## Module development
+
+If you want to develop your own module, please, check [this](https://rkimoakbioinformatics.github.io/oakvar/devguide_modules/) page.
