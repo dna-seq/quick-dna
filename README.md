@@ -59,3 +59,11 @@ Please, check OakVar [documentation](https://rkimoakbioinformatics.github.io/oak
 ## Module development
 
 If you want to develop your own module, please, check [this](https://rkimoakbioinformatics.github.io/oakvar/devguide_modules/) page.
+
+You can use vcf file from data/longevity_snps_1000genom.vcf as an example input.
+
+
+
+## Learn More
+
+For a comprehensive overview of the Just-DNA-Seq platform and its capabilities in personal genomics and longevity science, check out our research paper: ["Just-DNA-Seq, open-source personal genomics platform: longevity science for everyone"](https://arxiv.org/abs/2403.19087).
