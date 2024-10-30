@@ -1,21 +1,21 @@
-modules_dir: ~/oakvar_modules
-logs_dir: ~/oakvar_logs
+modules_dir: ~/oakvar_modules # the path to the directory where the modules will be installed, it can get huge as some dependencies are large
+logs_dir: ~/oakvar_logs # the path to the directory where the logs will be stored
 modules:
-- dbsnp
-- omim
-- ncbigene
-- gnomad
-- vcfinfo
-- clinvar
-- biogrid
-- just_cardio
-- just_cancer
-- just_coronary
-- just_drugs
-- just_longevitymap
-- just_lipidmetabolism
-- just_thrombophilia
-- just_superhuman
-- just_vo2max
-- longevity2reporter
-- phenotype_ontology
+- dbsnp # dbSNP is a HUGE database of genetic variation data, we use it to resolve rsIDs
+- omim # OMIM is a database of Human Genes and Genetic Disorders, we use it to resolve hereditary diseases
+- ncbigene # an annotation with NCBI Gene, database of gene and variant data from the National Center for Biotechnology Information
+- gnomad # an annotation with gnomAD, database of global genetic variation data from whole genome sequencing projects, often used to define frequences of alleles
+- vcfinfo # an annotation with VCF Info, module
+- clinvar # an annotation module for ClinVar, database of clinical genetic variants
+- biogrid # an annotation module for BioGRID, database of protein-protein interactions
+- phenotype_ontology # an annotation module for Phenotype Ontology
+- just_cardio # Just Cardio is postagregator module for cardiovascular disease data 
+- just_cancer # Just Cancer is postagregator module for cancer data
+- just_coronary # Just Coronary is postagregator module for coronary artery disease data
+- just_drugs # Just Drugs is postagregator module for drugs data
+- just_longevitymap # Just LongevityMap is postagregator module for longevity data
+- just_lipidmetabolism # Just LipidMetabolism is postagregator module for lipid metabolism genetic variants
+- just_thrombophilia # Just Thrombophilia is postagregator module for thrombophilia related genetic variants
+- just_superhuman # Just Superhuman is postagregator module for George Church's superhuman genetic variants databases
+- just_vo2max # Just VO2Max is postagregator module for VO2Max data
+- longevity2reporter # Longevity2Reporter is a major reporter module for Just-DNA-Seq project
