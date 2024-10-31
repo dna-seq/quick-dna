@@ -8,7 +8,6 @@ modules:
 - vcfinfo # an annotation with VCF Info, module
 - clinvar # an annotation module for ClinVar, database of clinical genetic variants
 - biogrid # an annotation module for BioGRID, database of protein-protein interactions
-- phenotype_ontology # an annotation module for Phenotype Ontology
 - just_cardio # Just Cardio is postagregator module for cardiovascular disease data 
 - just_cancer # Just Cancer is postagregator module for cancer data
 - just_coronary # Just Coronary is postagregator module for coronary artery disease data
