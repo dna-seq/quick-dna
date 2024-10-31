@@ -18,3 +18,6 @@ modules:
 - just_superhuman # Just Superhuman is postagregator module for George Church's superhuman genetic variants databases
 - just_vo2max # Just VO2Max is postagregator module for VO2Max data
 - longevity2reporter # Longevity2Reporter is a major reporter module for Just-DNA-Seq project
+- cadd_exome  # CADD Exome is a database of CADD scores for exome sequencing data
+- revel # REVEL is a database of REVEL scores for exome sequencing data
+- clinpred # ClinPred is a database of ClinPred scores for exome sequencing data
