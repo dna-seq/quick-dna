@@ -1,0 +1,29 @@
+services:
+  oakvar:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - OAKVAR_VERSION=2.12.10
+        - OV_EMAIL=${OV_EMAIL:-}
+        - OV_PW=${OV_PW:-}
+    environment:
+      - OAKVAR_PORT=8000
+    ports:
+      - "${OAKVAR_PORT:-8000}:8000"
+    volumes:
+      - ./oakvar/modules:/home/oakvar/.oakvar/modules
+      - ./oakvar/jobs:/home/oakvar/.oakvar/jobs
+      - ./oakvar/logs:/home/oakvar/.oakvar/logs
+      - oakvar_conf:/home/oakvar/.oakvar/conf
+    command: ov gui --multiuser --port $OAKVAR_PORT
+    restart: unless-stopped
+
+# Named volumes for persistent data storage
+volumes:
+  oakvar_conf:
+    # Docker: /var/lib/docker/volumes/oakvar_oakvar_conf/_data
+    # Podman (rootless): ~/.local/share/containers/storage/volumes/oakvar_conf/_data
+    # Podman (root): /var/lib/containers/storage/volumes/oakvar_conf/_data
+    # Warning: Direct access bypasses container abstraction layer
+    # and may cause issues if you modify files directly

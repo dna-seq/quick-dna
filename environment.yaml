@@ -7,6 +7,4 @@ dependencies:
   - setuptools
   - pip
   - pip:
-    - numpy<2.0.0
-    - oakvar==2.11.24
-    - pillow<10.0.0 #some people complained that newer pillow broke the code but I could not reproduce
+    - oakvar==2.12.10
